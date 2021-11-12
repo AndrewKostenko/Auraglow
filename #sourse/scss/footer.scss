@@ -1,0 +1,124 @@
+.footer {
+	background-color: $darkblue;
+	// .footer_inner
+	&_inner {
+		padding: 100px 0 77px 0;
+		color: white;
+		display: flex;
+		justify-content: space-between;
+		grid-gap: 30px;
+		flex-wrap: wrap;
+		@media (max-width: 1150px) {
+			justify-content: start;
+		}
+		@media (max-width: 700px) {
+			padding: 60px 0 50px 0;
+		}
+	}
+	// .footer_logo
+	&_logo {
+		@media (max-width: 1150px) {
+			order: 1;
+			flex: 0 1 50%;
+		}
+		@media (max-width: 800px) {
+			flex: 1 1 autos;
+		}
+	}
+	// .footer_lists
+	&_lists {
+		display: flex;
+		grid-gap: 30px 88px;
+		flex-wrap: wrap;
+		@media (max-width: 1150px) {
+			order: 3;
+			flex: 1 1 100%;
+		}
+	}
+	// .footer_contact
+	&_contact {
+		@media (max-width: 1150px) {
+			order: 2;
+		}
+	}
+	// .footer_title
+	&_title {
+		line-height: 18 / 16 * 100%;
+		padding: 0 51px 60px 0;
+		border-bottom: 1px solid white;
+		margin-bottom: 30px;
+		@media (max-width: 700px) {
+			padding: 0 20px 20px 0;
+		}
+	}
+	// .footer_button
+	&_button {
+		margin-bottom: 50px;
+		a {
+			border: 1px solid white;
+			display: inline-block;
+			padding: 14px 50px;
+			color: white;
+		}
+		@media (max-width: 700px) {
+			margin-bottom: 30px;
+			a {
+				padding: 10px 30px;
+			}
+		}
+	}
+	// .footer_social
+	&_social {
+		display: flex;
+		grid-gap: 24px;
+	}
+	// .footer_link
+	&_link {
+		display: block;
+		width: 44px;
+		flex: 0 0 44px;
+		transition: 300ms;
+		@media (any-hover: hover) {
+			&:hover {
+				transform: scale(1.03);
+			}
+		}
+		img {
+			width: 100%;
+		}
+	}
+	// .footer_bottom
+	&_bottom {
+		line-height: 18 / 16 * 100%;
+		color: white;
+		padding-bottom: 60px;
+	}
+}
+.list-footer {
+	// .list-footer_title
+	&_title {
+		font-size: 18px;
+		line-height: 30 / 18 * 100%;
+		color: $gold;
+		margin-bottom: 40px;
+		@media (max-width: 700px) {
+			margin-bottom: 20px;
+		}
+	}
+	// .list-footer_item
+	&_item {
+		line-height: 18 / 16 * 100%;
+		padding-bottom: 16.5px;
+		&:last-child {
+			padding-bottom: 0;
+		}
+		a {
+			color: white;
+		}
+		@media (any-hover: hover) {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
